@@ -1,0 +1,49 @@
+{
+  "name": "apollo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yoo-Nah Park",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "apollo-engine": "^1.1.2",
+    "apollo-server": "^2.1.0",
+    "apollo-server-express": "^2.2.2",
+    "babel-loader": "^8.0.4",
+    "better-npm-run": "^0.1.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-relay": "^0.5.5",
+    "graphql-tag": "^2.10.0",
+    "shelljs": "^0.8.2",
+    "typescript": "3.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0",
+    "@babel/core": "7.0.0",
+    "@babel/plugin-proposal-class-properties": "7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-typescript": "7.0.0"
+  },
+  "scripts": {
+    "build": "better-npm-run build",
+    "build:watch": "better-npm-run build:watch",
+    "start": "better-npm-run start",
+    "test": "better-npm-run test",
+    "test:watch": "better-npm-run test:watch",
+    "test:coverage": "better-npm-run test:coverage"
+  },
+  "betterScripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "start": "node ./index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  }
+}
